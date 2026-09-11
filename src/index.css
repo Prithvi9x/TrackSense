@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  * {
+    border-color: theme('colors.line');
+  }
+  :focus-visible {
+    outline: 2px solid theme('colors.pine.500');
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Simple input reset used across forms */
+.field {
+  @apply w-full rounded border border-line bg-surface px-3 py-2.5 text-[15px] text-ink placeholder:text-ink-faint focus:border-pine-500 transition-colors;
+}
+
+.label {
+  @apply block text-[13px] font-medium text-ink-muted mb-1.5;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded bg-pine-500 px-4 py-2.5 text-[15px] font-medium text-white hover:bg-pine-600 active:bg-pine-700 transition-colors disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded border border-line bg-surface px-4 py-2.5 text-[15px] font-medium text-ink hover:bg-pine-50 transition-colors disabled:opacity-50 disabled:pointer-events-none;
+}
+
+.btn-ghost {
+  @apply inline-flex items-center justify-center rounded px-3 py-2 text-[14px] font-medium text-ink-muted hover:text-ink hover:bg-pine-50 transition-colors;
+}
