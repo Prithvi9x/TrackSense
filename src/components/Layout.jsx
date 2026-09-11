@@ -18,7 +18,7 @@ export default function Layout() {
       {/* Desktop sidebar */}
       <aside className="hidden md:flex md:w-60 md:flex-col md:border-r md:border-line md:bg-surface md:px-5 md:py-6">
         <div className="mb-8 px-1">
-          <span className="font-serif text-[22px] leading-none text-ink">Ledger</span>
+          <span className="font-serif text-[22px] leading-none text-ink">TrackSense</span>
           <p className="mt-1 text-[12px] text-ink-faint truncate">{user?.email}</p>
         </div>
         <nav className="flex flex-1 flex-col gap-1">
@@ -46,7 +46,7 @@ export default function Layout() {
       <div className="flex-1">
         {/* Mobile top bar */}
         <header className="flex items-center justify-between border-b border-line bg-surface px-4 py-3 md:hidden">
-          <span className="font-serif text-[19px] leading-none text-ink">Ledger</span>
+          <span className="font-serif text-[19px] leading-none text-ink">TrackSenser</span>
         </header>
 
         <main className="mx-auto max-w-5xl px-4 py-6 pb-24 md:px-8 md:py-8 md:pb-8">

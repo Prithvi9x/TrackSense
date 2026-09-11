@@ -36,7 +36,7 @@ export default function Login() {
     <div className="flex min-h-screen items-center justify-center bg-paper px-4">
       <div className="w-full max-w-sm">
         <div className="mb-8 text-center">
-          <h1 className="font-serif text-[28px] text-ink">Ledger</h1>
+          <h1 className="font-serif text-[28px] text-ink">TrackSense</h1>
           <p className="mt-1.5 text-[14px] text-ink-muted">Your daily expenses, kept simply.</p>
         </div>
 
