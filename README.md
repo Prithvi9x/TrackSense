@@ -1,4 +1,4 @@
-# Ledger - Personal Expense Tracker
+# TrackSense - Personal Expense Tracker
 
 A lightweight personal expense tracker for daily spending (bus, train, auto rickshaw,
 food, and anything else). Built with React, Vite, Tailwind CSS, Supabase, and Recharts.
@@ -60,37 +60,6 @@ npm run dev
 ```
 
 Visit the printed local URL, create an account, and start adding expenses.
-
-## 4. Deploy to GitHub Pages
-
-The repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that
-builds and deploys automatically on every push to `main`.
-
-1. Push this project to a new GitHub repository.
-2. In **Settings > Pages**, set **Source** to "GitHub Actions".
-3. In **Settings > Secrets and variables > Actions**, add two repository secrets:
-   - `VITE_SUPABASE_URL`
-   - `VITE_SUPABASE_ANON_KEY`
-4. **Important:** open `vite.config.js` and set `base` to match your repo name:
-   ```js
-   base: '/your-repo-name/',
-   ```
-   (If you're deploying to a user/org page at `https://<username>.github.io/`,
-   use `base: '/'` instead.)
-5. Push to `main`. The workflow builds the app and publishes `dist/` to Pages.
-
-### Manual deploy (alternative)
-
-You can also deploy by hand using the `gh-pages` package, already listed as a
-dev dependency:
-
-```bash
-npm run build
-npm run deploy
-```
-
-This pushes the built `dist/` folder to a `gh-pages` branch, which you can then
-point GitHub Pages at (Settings > Pages > Source: "Deploy from a branch").
 
 ## Project structure
 
