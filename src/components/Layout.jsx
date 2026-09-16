@@ -46,7 +46,7 @@ export default function Layout() {
       <div className="flex-1">
         {/* Mobile top bar */}
         <header className="flex items-center justify-between border-b border-line bg-surface px-4 py-3 md:hidden">
-          <span className="font-serif text-[19px] leading-none text-ink">TrackSenser</span>
+          <span className="font-serif text-[19px] leading-none text-ink">TrackSense</span>
         </header>
 
         <main className="mx-auto max-w-5xl px-4 py-6 pb-24 md:px-8 md:py-8 md:pb-8">
